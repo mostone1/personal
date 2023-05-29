@@ -16,8 +16,13 @@ a {
 }
 
 .container {
-  width: 1200px;
+  max-width: 80%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 main {
@@ -297,7 +302,7 @@ h1 {
   display: block;
   font-size: 50px;
   font-weight: 900;
-  color: #3d535f;
+  color: #334853;
 }
 
 .multiText {
@@ -341,3 +346,81 @@ button:hover {
   background-color: #7f00ff;
 }
 
+.about {
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.about h2 {
+  font-size: 70px;
+  font-weight: 800;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.about p {
+  font-size: 20px; 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 7%;
+}
+
+.sertificate {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  height: 550px;
+}
+
+@media (max-width: 700px) {
+  .about h2 {
+    font-size: 50px;
+  }
+
+  @media (max-width: 700px) {
+  .about p {
+    font-size: 15px;
+  }
+
+  @media (max-width: 700px) {
+    .about .sertificate {
+      height: 360px;
+    }
+  }
+  @media (max-width: 500px) {
+    .about h2 {
+      font-size: 30px;
+    }
+  
+    @media (max-width: 500px) {
+    .about p {
+      font-size: 8px;
+    }
+  
+    @media (max-width: 500px) {
+      .about .sertificate {
+        height: 275px;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    .about h2 {
+      font-size: 20px;
+    }
+  
+    @media (max-width: 360px) {
+    .about p {
+      font-size: 6px;
+    }
+  
+    @media (max-width: 360px) {
+      .about .sertificate {
+        height: 200px;
+      }
+    }
+  }
